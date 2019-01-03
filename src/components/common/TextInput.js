@@ -8,7 +8,7 @@ const TextInput = ({name, label, onChange, placeholder, value, error}) => {
 
   return (
     <div className={wrapperClass}>
-      <label htmlFor={name}>{label}</label>
+      {label && <label htmlFor={name}>{label}</label>}
       <div className="field">
         <input
           type="text"
@@ -27,7 +27,7 @@ const TextInput = ({name, label, onChange, placeholder, value, error}) => {
 
 TextInput.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   onChange:PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   value: PropTypes.string,

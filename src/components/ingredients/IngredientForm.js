@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
-import TextInput from '../../common/TextInput';
-import NumberInput from '../../common/NumberInput';
+import TextInput from '../common/TextInput';
+import NumberInput from '../common/NumberInput';
 
 const NewIngredient = ({ingredient, onSave, onChange}) => {
   return (

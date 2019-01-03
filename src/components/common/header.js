@@ -7,6 +7,10 @@ export default function Header() {
       <IndexLink to="/" activeClass="active">Inicio</IndexLink>
       {' | '}
       <Link to="/ingredientes">Ingredientes</Link>
+      {' | '}
+      <Link to="/recetas">Recetas</Link>
+      {' | '}
+      <Link to="/perfil">Perfil</Link>
     </nav>
   );
 }

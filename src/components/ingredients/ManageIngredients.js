@@ -27,14 +27,18 @@ class ManageIngredients extends React.Component {
 
   saveIngredient(event){
     event.preventDefault();
-    this.props.actions.saveIngredient(this.state);
+    this.props.actions.saveIngredients([this.state]);
     browserHistory.push('/ingredientes');
   }
 
   render() {
+
+
     return (
       <div>
+
         <h1>Ingrediente</h1>
+
         <IngredientForm
           ingredient={this.state}
           onSave={this.saveIngredient}
@@ -63,7 +67,8 @@ function mapStateToProps(state, ownProps) {
 
   const ingredientId = ownProps.params.id;
 
-  if (ingredientId && state.ingredients && state.ingredients.length) ingredient = state.ingredients.find(byId(ingredientId));
+  if (ingredientId && state.ingredients && state.ingredients.length)
+    ingredient = state.ingredients.find(byId(ingredientId));
 
   return {ingredient};
 }

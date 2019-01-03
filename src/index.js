@@ -8,9 +8,11 @@ import routes from './routes';
 import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {loadIngredients} from './actions/ingredientActions';
+import {loadRecipes} from './actions/recipesActions';
 
 const store = configureStore();
 store.dispatch(loadIngredients());
+store.dispatch(loadRecipes());
 
 render(
   <Provider store={store}>

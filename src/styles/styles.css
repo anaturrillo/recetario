@@ -6,7 +6,7 @@ h1 {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #4d4d4d;
   min-width: 550px;
-  max-width: 850px;
+  max-width: 990px;
   margin: 0 auto;
 }
 
@@ -16,4 +16,67 @@ a.active {
 
 nav {
   padding-top: 20px;
+}
+
+.no-field {
+  padding-top: 19px;
+}
+
+.edit-recipe h1 {
+  border-bottom: 1px dashed #90caf9;
+  padding-bottom: 14px;
+}
+
+.edit-recipe div {
+  overflow: hidden;
+}
+
+form .card{
+  padding: 15px;
+  border: 1px solid #90caf9;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+form .btn:focus {
+  outline: none;
+}
+
+.accept-btn {
+  float: right;
+}
+
+.recipe-form-section {
+  border-top: 1px dashed #90caf9;
+  margin: 20px 0;
+}
+
+.recipe-form-section:first-child {
+  border: none;
+}
+
+.recipe-form-section img{
+  width: 100px;
+}
+
+.nutrinfo h2{
+}
+
+.nutri-values {
+  padding: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.modal {
+  opacity: 1 !important;
+  background-color: rgba(30,144,255, 0.8);
+}
+
+.modal.fade .modal-dialog {
+  margin-top: 100px;
+}
+
+.ingredientRow:hover{
+  background-color: lavender;
 }

@@ -16,8 +16,11 @@
   "dependencies": {
     "@material-ui/core": "^3.5.1",
     "@material-ui/icons": "^3.0.1",
+    "@vtex/react-csv-parse": "^3.0.2",
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
+    "firebase": "^5.5.9",
+    "firebaseui": "^3.4.1",
     "jquery": "2.2.3",
     "material-icons-react": "^1.0.4",
     "react": "15.0.2",

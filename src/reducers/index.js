@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
 import ingredients from './ingredientReducer';
+import recipes from './recipesReducers';
 
 const rootReducer = combineReducers({
-  ingredients
+  ingredients,
+  recipes
 });
 
 export default rootReducer;

@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import IngredientRow from './IngredientRow';
+import {lowerToHigher} from '../common/helpers';
 
 const IngredientList = ({ingredients, deleteIngredient}) => {
 
@@ -14,12 +15,12 @@ const IngredientList = ({ingredients, deleteIngredient}) => {
           <th>Carbohidratos</th>
           <th>Proteinas</th>
           <th>Grasas</th>
-          <th>&nbsp;</th>
-          <th>&nbsp;</th>
+          {deleteIngredient && <th>&nbsp;</th>}
+          {deleteIngredient && <th>&nbsp;</th>}
         </tr>
       </thead>
       <tbody>
-      {ingredients.map(ingredient => <IngredientRow key={ingredient.id} ingredient={ingredient} deleteIngredient={deleteIngredient} /> )}
+      {ingredients.sort(lowerToHigher('id')).map(ingredient => <IngredientRow key={ingredient.id} ingredient={ingredient} deleteIngredient={deleteIngredient} /> )}
       </tbody>
     </table>
   );
